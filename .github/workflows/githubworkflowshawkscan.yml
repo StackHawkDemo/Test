@@ -10,7 +10,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
       - name: Run HawkScan
-        uses: stackhawk/hawkscan-action@v2
+        uses: stackhawk/hawkscan-action@v2.0.3
         with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
           
@@ -21,3 +21,4 @@ jobs:
           # Use GitHub Actions workflow variables to populate these environment variables
           COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
           BRANCH_NAME: ${{ github.head_ref }}
+          

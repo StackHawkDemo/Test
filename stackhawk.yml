@@ -1,7 +1,7 @@
-# -- stackhawk configuration for GitHub --
+# -- stackhawk configuration for Example --
 app:
   # -- An applicationId obtained from the StackHawk platform. --
-  applicationId: f5ef7eb6-bdc2-4813-bcca-6f02b480b507 # (required)
+  applicationId: f62e4ccc-acae-4821-908b-0cd4992e6efa # (required)
   # -- The environment for the applicationId defined in the StackHawk platform. --
   env: Development # (required)
   # -- The url of your application to scan --

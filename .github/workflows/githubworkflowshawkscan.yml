@@ -16,6 +16,6 @@ jobs:
           
         env:
           # Use GitHub Actions workflow variables to populate these environment variables
-          COMMIT_SHA: ${{ ENV_VAR_FOR_COMMIT_SHA }}
-          BRANCH_NAME: ${{ ENV_VAR_FOR_BRANCH }}
+          COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+          BRANCH_NAME: ${{ github.head_ref }}
           

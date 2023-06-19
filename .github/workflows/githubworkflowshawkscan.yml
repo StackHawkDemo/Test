@@ -14,9 +14,6 @@ jobs:
         with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
           
-          codeScanningAlerts: true
-          githubToken: ${{ github.token }}
-          
         env:
           # Use GitHub Actions workflow variables to populate these environment variables
           COMMIT_SHA: ${{ github.event.pull_request.head.sha }}

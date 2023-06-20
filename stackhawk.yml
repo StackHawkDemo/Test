@@ -8,7 +8,7 @@ app:
   host: https://www.example.com # (required)
   
 hawk:  
-  failureThreshold: medium
+  failureThreshold: high
 
 
 #tags:
